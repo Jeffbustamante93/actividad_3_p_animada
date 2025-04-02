@@ -1,4 +1,4 @@
-    <script>
+
         // Variables globales
         const scenes = document.querySelectorAll('.scene');
         const dots = document.querySelectorAll('.dot');
@@ -100,4 +100,3 @@
                 }
             });
         }, 2000);
-    </script>
