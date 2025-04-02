@@ -1,5 +1,6 @@
-
-        /* RESET ESTILOS Y FUENTES */
+/* =========================================
+           RESET ESTILOS Y FUENTES - CONFIGURACIÓN GLOBAL
+           ========================================= */
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bangers&family=Press+Start+2P&display=swap');
         
         :root {
@@ -26,15 +27,20 @@
             perspective: 1200px;
         }
         
-        /* ESTILOS DE LA PRESENTACIÓN */
-        #presentation-container {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, var(--cn-purple), var(--cn-blue));
-        }
+        /* =========================================
+   ESTILOS DEL CONTENEDOR PRINCIPAL DE PRESENTACIÓN
+   ========================================= */
+#presentation-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto; /* Cambiado de 'hidden' a 'auto' */
+    background: linear-gradient(135deg, var(--cn-purple), var(--cn-blue));
+}
         
+        /* =========================================
+           ESTILOS DE LAS ESCENAS/DIAPOSITIVAS
+           ========================================= */
         .scene {
             position: absolute;
             width: 100%;
@@ -56,31 +62,225 @@
             z-index: 2;
         }
         
-        .title {
-            font-family: 'Bangers', cursive;
-            font-size: 4rem;
-            text-align: center;
-			margin-top: 2rem;
-            margin-bottom: 2rem;
-            color: var(--cn-yellow);
-            text-shadow: 5px 5px 0 var(--cn-red), 
-                         8px 8px 0 var(--cn-black);
-            letter-spacing: 3px;
-            transform: rotate(-5deg);
-            animation: titleBounce 2s infinite alternate;
-        }
+        /* =========================================
+           ESTILOS DEL TÍTULO PRINCIPAL 1
+           ========================================= */
+.title1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+    transform: rotate(-3deg); /* Giro leve */
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: absolute;
+    top: 4rem; /* Separación hacia arriba */
+    left: 35%; /* Centrado horizontal */
+    transform: translateX(-50%) rotate(-3deg); /* Ajuste de centrado */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
         
         @keyframes titleBounce {
             0% { transform: rotate(-5deg) scale(1); }
             100% { transform: rotate(-5deg) scale(1.05); }
         }
         
+		
+	        /* =========================================
+           ESTILOS DEL TÍTULO PRINCIPAL TITTLE 2
+           ========================================= */
+.title2 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+   
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: absolute;
+    top: 2.5rem; /* Separación hacia arriba */
+    left: 40%; /* Centrado horizontal */
+  
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+        
+        @keyframes titleBounce {
+            0% { transform: rotate(-5deg) scale(1); }
+            100% { transform: rotate(-5deg) scale(1.05); }
+        }	
+		
+		
+	        /* =========================================
+           ESTILOS DEL TÍTULO PRINCIPAL TITTLE 3
+           ========================================= */
+.title3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+    transform: rotate(-3deg); /* Giro leve */
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: absolute;
+    top: 2.5rem; /* Separación hacia arriba */
+    left: 40%; /* Centrado horizontal */
+    transform: translateX(-50%) rotate(-3deg); /* Ajuste de centrado */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+        
+        @keyframes titleBounce {
+            0% { transform: rotate(-5deg) scale(1); }
+            100% { transform: rotate(-5deg) scale(1.05); }
+        }	
+	
+		
+	        /* =========================================
+           ESTILOS DEL TÍTULO PRINCIPAL TITTLE 4
+           ========================================= */
+.title4 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+    transform: rotate(-3deg); /* Giro leve */
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: absolute;
+    top: 1.5rem; /* Separación hacia arriba */
+    left: 40%; /* Centrado horizontal */
+    transform: translateX(-50%) rotate(-3deg); /* Ajuste de centrado */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+        
+        @keyframes titleBounce {
+            0% { transform: rotate(-5deg) scale(1); }
+            100% { transform: rotate(-5deg) scale(1.05); }
+        }			
+		
+/* =========================================
+   ESTILOS DEL TÍTULO PRINCIPAL TITTLE 5
+   ========================================= */
+.title5 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    padding: 0.5rem; /* Añadido para darle más espacio */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: relative;
+    top: -0.5rem; /* Ligera elevación */
+    left: 0%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste de centrado */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+
+/* Desplazamiento del contenedor de abajo */
+.content-box {
+    margin-top: 1rem; /* Un pequeño margen para que no se vea tan pegado */
+}
+
+/* Animación sutil */
+@keyframes titleBounce {
+    0% { transform: translateX(-50%) scale(1); }
+    100% { transform: translateX(-50%) scale(1.05); }
+}	
+		
+
+	        /* =========================================
+           ESTILOS DEL TÍTULO PRINCIPAL TITTLE 6
+           ========================================= */
+.title6 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem; /* Tamaño compacto */
+    text-align: center;
+    margin: 0; /* Eliminamos márgenes adicionales */
+    color: var(--cn-yellow);
+    text-shadow: 2px 2px 0 var(--cn-red), 
+                 3px 3px 0 var(--cn-black); /* Sombras más sutiles */
+    letter-spacing: 2px; /* Un poco más compacto */
+    transform: rotate(-3deg); /* Giro leve */
+    animation: titleBounce 1.5s infinite alternate;
+
+    /* Posicionamiento absoluto */
+    position: absolute;
+    top: 3rem; /* Separación hacia arriba */
+    left: 40%; /* Centrado horizontal */
+    transform: translateX(-50%) rotate(-3deg); /* Ajuste de centrado */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+        
+        @keyframes titleBounce {
+            0% { transform: rotate(-5deg) scale(1); }
+            100% { transform: rotate(-5deg) scale(1.05); }
+        }	
+
+
+
+/* =========================================
+   DATOS APRENDIZ - ESTILOS DE LA CAJA DE PRESENTACIÓN 
+   ========================================= */
+.presentation-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    border: 4px solid var(--cn-yellow); /* Borde amarillo */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 2rem; /* Espacio interno */
+    max-width: 70%; /* Ancho máximo */
+    margin: 2rem auto; /* Centrado automático */
+    text-align: center; /* Centrado de texto */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra para resaltar */
+}
+
+/* =========================================
+   DATOS APRENDIZ - ESTILOS DEL TEXTO DE PRESENTACIÓN
+   ========================================= */
+.presentation-text {
+    font-family: 'Bangers', cursive; /* Tipografía llamativa */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: var(--cn-white); /* Texto blanco */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    text-shadow: 1px 1px 2px var(--cn-black); /* Sombra leve */
+}
+
+
+
+	
+		
+        /* =========================================
+           ESTILOS DEL CONTENEDOR PRINCIPAL DE CONTENIDO 
+           ========================================= */
         .content-box {
             background-color: rgba(0, 0, 0, 0.7);
             border: 5px solid var(--cn-yellow);
             border-radius: 20px;
-            padding: 2rem;
-            max-width: 800px;
+            padding: 1.5rem; /* Reducido de 2rem */
+            max-width: 65%; /* Reducido de 800px */
+            width: 80%; /* Asegura que siempre sea proporcional */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             position: relative;
             overflow: hidden;
@@ -104,10 +304,13 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* =========================================
+           ESTILOS DE LOS PERSONAJES - MODIFICADO PARA UBICARLOS MÁS A LOS LATERALES
+           ========================================= */
         .character {
             position: absolute;
-            width: 150px;
-            height: 150px;
+            width: 120px; /* Reducido de 150px */
+            height: 120px; /* Reducido de 150px */
             background-size: contain;
             background-repeat: no-repeat;
             z-index: 3;
@@ -116,22 +319,22 @@
         
         #character1 {
             background-image: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4bb.svg');
-            top: 10%;
-            left: 5%;
+            top: 15%;
+            left: 3%; /* Movido más hacia el lateral */
             animation: float 6s ease-in-out infinite;
         }
         
         #character2 {
             background-image: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4f1.svg');
             top: 70%;
-            right: 5%;
+            right: 3%; /* Movido más hacia el lateral */
             animation: float 5s ease-in-out infinite 1s;
         }
         
         #character3 {
             background-image: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f5a5.svg');
-            bottom: 10%;
-            left: 20%;
+            bottom: 15%;
+            left: 3%; /* Movido más hacia el lateral */
             animation: float 7s ease-in-out infinite 0.5s;
         }
         
@@ -140,10 +343,13 @@
             50% { transform: translateY(-20px); }
         }
         
+        /* =========================================
+           ESTILOS DEL TEXTO DEL CONTENIDO
+           ========================================= */
         .content-text {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            font-size: 1.3rem; /* Reducido de 1.5rem */
+            line-height: 1.5;
+            margin-bottom: 1.2rem; /* Reducido de 1.5rem */
             position: relative;
         }
         
@@ -153,20 +359,26 @@
             text-shadow: 2px 2px 0 var(--cn-red);
         }
         
+        /* =========================================
+           ESTILOS DE LA CAJA DE EJEMPLOS
+           ========================================= */
         .example-box {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 2rem 0;
+            margin: 1.5rem 0; /* Reducido de 2rem */
         }
         
+        /* =========================================
+           ESTILOS DE LOS DISPOSITIVOS DE DEMOSTRACIÓN - LIGERAMENTE REDUCIDOS
+           ========================================= */
         .device {
-            width: 150px;
-            height: 250px;
+            width: 130px; /* Reducido de 150px */
+            height: 220px; /* Reducido de 250px */
             background-color: var(--cn-white);
             border-radius: 15px;
             position: relative;
-            margin: 1rem;
+            margin: 0.8rem; /* Reducido de 1rem */
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
             transition: all 0.3s ease;
             overflow: hidden;
@@ -206,27 +418,27 @@
         }
         
         .phone {
-            height: 300px;
+            height: 250px; /* Reducido de 300px */
         }
         
         .tablet {
-            width: 200px;
-            height: 280px;
+            width: 180px; /* Reducido de 200px */
+            height: 240px; /* Reducido de 280px */
         }
         
         .desktop {
-            width: 250px;
-            height: 180px;
+            width: 220px; /* Reducido de 250px */
+            height: 160px; /* Reducido de 180px */
         }
         
         .desktop::after {
             content: "";
             position: absolute;
-            bottom: -50px;
+            bottom: -40px; /* Reducido de -50px */
             left: 50%;
             transform: translateX(-50%);
-            width: 120px;
-            height: 50px;
+            width: 100px; /* Reducido de 120px */
+            height: 40px; /* Reducido de 50px */
             background-color: var(--cn-white);
             border-radius: 0 0 10px 10px;
         }
@@ -234,17 +446,20 @@
         .desktop::before {
             content: "";
             position: absolute;
-            bottom: -120px;
+            bottom: -100px; /* Reducido de -120px */
             left: 50%;
             transform: translateX(-50%);
-            width: 180px;
+            width: 160px; /* Reducido de 180px */
             height: 10px;
             background-color: var(--cn-white);
         }
         
+        /* =========================================
+           ESTILOS DE LOS PUNTOS DE NAVEGACIÓN
+           ========================================= */
         .nav-dots {
             position: fixed;
-            bottom: 20px;
+            bottom: 55px; /* Ajustado para dejar espacio para el footer */
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -252,11 +467,11 @@
         }
         
         .dot {
-            width: 15px;
-            height: 15px;
+            width: 12px; /* Reducido de 15px */
+            height: 12px; /* Reducido de 15px */
             border-radius: 50%;
             background-color: var(--cn-white);
-            margin: 0 10px;
+            margin: 0 8px; /* Reducido de 10px */
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -267,21 +482,25 @@
             transform: scale(1.3);
         }
         
+        /* =========================================
+           ESTILOS DE LOS EJEMPLOS DE CÓDIGO CSS
+           ========================================= */
         .code-sample {
             background-color: #1e1e1e;
             color: #d4d4d4;
-            padding: 1rem;
+            padding: 2rem; /* Distancia entre el contenido y la margen */
             border-radius: 10px;
             font-family: 'Courier New', monospace;
-            margin: 1rem 0;
+            margin: 1rem 0; /* Reducido de 1rem */
             overflow-x: auto;
             position: relative;
+            font-size: 0.9rem; /* Tamaño de fuente ligeramente reducido */
         }
         
         .code-sample::before {
             content: "CSS";
             position: absolute;
-            top: -10px;
+            top: 5px;
             left: 10px;
             background-color: var(--cn-red);
             color: white;
@@ -317,60 +536,72 @@
             color: #6a9955;
         }
         
-        .btn {
-            background-color: var(--cn-red);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-family: 'Bangers', cursive;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-            border-radius: 50px;
-            cursor: pointer;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 0 var(--cn-black);
-            position: relative;
-            overflow: hidden;
-        }
+    /* =========================================
+   ESTILOS DE LOS BOTONES
+   ========================================= */
+.btn {
+    background-color: var(--cn-red); /* Fondo rojo personalizado */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    font-family: 'Bangers', cursive; /* Fuente llamativa y estilizada */
+    font-size: 1.1rem; /* Tamaño de letra reducido para mejor visualización */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    border-radius: 50px; /* Bordes redondeados para dar un efecto de píldora */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar el ratón */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    display: block; /* Hace que el botón se comporte como un bloque para centrarse */
+    margin-top: 0.8rem; /* Separación superior para dar espacio */
+    transition: all 0.3s ease; /* Transición suave en todos los cambios */
+    box-shadow: 0 5px 0 var(--cn-black); /* Sombra debajo del botón para efecto de profundidad */
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+
+/* Efecto de elevación al pasar el ratón */
+.btn:hover {
+    transform: translateY(-3px); /* Eleva el botón 3px hacia arriba */
+    box-shadow: 0 8px 0 var(--cn-black); /* Aumenta la sombra para dar el efecto de flotación */
+}
+
+/* Efecto de presionado al hacer clic */
+.btn:active {
+    transform: translateY(2px); /* Baja el botón 2px para simular presión */
+    box-shadow: 0 3px 0 var(--cn-black); /* Reduce la sombra para dar sensación de profundidad */
+}
+
+/* Efecto de destello o resplandor */
+.btn::after {
+    content: ""; /* Genera un contenido vacío para el efecto */
+    position: absolute; /* Posiciona dentro del botón */
+    top: -50%; /* Inicia el efecto desde arriba */
+    left: -50%; /* Inicia el efecto desde la izquierda */
+    width: 200%; /* Cubre el doble del tamaño del botón */
+    height: 200%; /* Cubre el doble del tamaño del botón */
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%); /* Efecto de destello radial */
+    transform: scale(0); /* Escala inicial en cero (efecto oculto) */
+    transition: transform 0.5s ease; /* Animación suave del destello */
+}
+
+/* Al pasar el ratón, el destello se agranda */
+.btn:hover::after {
+    transform: scale(1); /* Muestra el destello completo */
+}
         
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 0 var(--cn-black);
-        }
-        
-        .btn:active {
-            transform: translateY(2px);
-            box-shadow: 0 3px 0 var(--cn-black);
-        }
-        
-        .btn::after {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
-            transform: scale(0);
-            transition: transform 0.5s ease;
-        }
-        
-        .btn:hover::after {
-            transform: scale(1);
-        }
-        
+        /* =========================================
+           ESTILOS DE LA DEMO RESPONSIVA
+           ========================================= */
         .responsive-demo {
             width: 100%;
-            height: 300px;
+            height: 220px; /* Reducido de 300px */
             background-color: var(--cn-blue);
             border-radius: 15px;
-            margin: 2rem 0;
+            margin: 1.5rem 0; /* Reducido de 2rem */
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 2rem;
+            font-size: 1.8rem; /* Reducido de 2rem */
             text-align: center;
             transition: all 0.5s ease;
             position: relative;
@@ -384,11 +615,13 @@
             left: 0;
             right: 0;
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.9rem; /* Reducido de 1rem */
             color: rgba(255,255,255,0.7);
         }
         
-        /* ANIMACIONES ESPECIALES */
+        /* =========================================
+           ANIMACIONES ESPECIALES
+           ========================================= */
         @keyframes shake {
             0%, 100% { transform: translateX(0); }
             10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
@@ -408,52 +641,78 @@
             animation: flash 1.5s ease infinite;
         }
         
-        /* ESTILOS RESPONSIVOS */
+       /* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+    position: fixed; /* Fija el footer en la parte inferior de la pantalla */
+    bottom: 0; /* Se ubica en la parte más baja de la página */
+    left: 0; /* Se alinea al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    padding: 8px 0; /* Reducido para que sea más delgado */
+    text-align: center; /* Texto centrado dentro del footer */
+    font-size: 0.8rem; /* Tamaño de letra más pequeño y estilizado */
+    color: var(--cn-white); /* Texto blanco */
+    z-index: 1; /* Ajustado para que quede detrás del slide o barra vertical */
+    font-weight: 200; /* Grosor de letra más ligero para que no se vea tan grueso */
+}
+        
+        /* =========================================
+           ESTILOS RESPONSIVOS
+           ========================================= */
         @media (max-width: 768px) {
             .title {
-                font-size: 2.5rem;
+                font-size: 2.2rem; /* Reducido de 2.5rem */
+                margin-top: 1rem;
             }
             
             .content-text {
-                font-size: 1.2rem;
+                font-size: 1.1rem; /* Reducido de 1.2rem */
             }
             
             .device {
-                width: 100px;
-                height: 180px;
+                width: 90px; /* Reducido de 100px */
+                height: 160px; /* Reducido de 180px */
             }
             
             .tablet {
-                width: 150px;
-                height: 220px;
+                width: 130px; /* Reducido de 150px */
+                height: 190px; /* Reducido de 220px */
             }
             
             .desktop {
-                width: 180px;
-                height: 130px;
+                width: 160px; /* Reducido de 180px */
+                height: 120px; /* Reducido de 130px */
             }
             
             .desktop::after {
-                bottom: -40px;
-                width: 90px;
-                height: 40px;
+                bottom: -35px; /* Reducido de -40px */
+                width: 80px; /* Reducido de 90px */
+                height: 35px; /* Reducido de 40px */
             }
             
             .desktop::before {
-                bottom: -90px;
-                width: 140px;
+                bottom: -80px; /* Reducido de -90px */
+                width: 120px; /* Reducido de 140px */
+            }
+            
+            .content-box {
+                width: 90%;
             }
         }
         
         @media (max-width: 480px) {
             .title {
-                font-size: 2rem;
+                font-size: 1.8rem; /* Reducido de 2rem */
                 text-shadow: 3px 3px 0 var(--cn-red), 
-                             5px 5px 0 var(--cn-black);
+                             4px 4px 0 var(--cn-black);
+                margin-top: 2rem;
             }
             
             .content-box {
-                padding: 1rem;
+                padding: 0.8rem; /* Reducido de 1rem */
+                width: 95%;
             }
             
             .example-box {
@@ -462,7 +721,20 @@
             }
             
             .device {
-                margin: 0.5rem 0;
+                margin: 0.4rem 0; /* Reducido de 0.5rem */
+            }
+            
+            .character {
+                width: 80px; /* Más pequeño en móviles */
+                height: 80px;
+            }
+            
+            .footer {
+                font-size: 0.7rem;
+                padding: 8px 0;
+            }
+            
+            .nav-dots {
+                bottom: 40px;
             }
         }
-  
